@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: ubuntu;
+    color: white;
+}
+
+:root {
+    --teal: #617a74;
+    --gray: #413c37;
+    --brown: #8b3a39;
+    --red: #cf2c24;
+    --desert_yellow: #dfb675;
+    --yellow: #FFC107;
+}
+
+header {
+    height: 50vh;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(https://techmonitor.ai/wp-content/uploads/sites/4/2018/02/hong-kong-1990268_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px -5px 15px black inset;
+}
+
+html {
+    color: white;
+    background-color: rgb(47, 31, 31);
+}
+
+body {
+    margin: auto 0px;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.navbutton {
+    text-decoration: none;
+    border: solid 3px var(--yellow);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 18px;
+    margin: 20px 0;
+}
+
+.center-text {
+    text-align: center;
+    margin: auto;
+    width: 80vw;
+}
+
+.required-asterisk {
+    color: red;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+#text-inputs-div {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.label-and-textbox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.dualTextField {
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-field {
+    color: white;
+    border: solid var(--yellow) 3px;
+    background: none;
+    border-radius: 10px;
+    width: 35vw;
+    padding: 10px;
+    margin: 10px;
+}
+
+.icon {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#pfp-birthday {
+    display: flex;
+    margin: auto auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#birthday {
+    background: none;
+    border: solid var(--yellow) 3px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#bday-div {
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.pfp-bday {
+    margin: auto 10px;
+    padding: 10px;
+}
+
+#gender-radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#birthday-gender-div {
+    width: 50vw;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.gender-radio-button {
+    margin: 10px 10px;
+}
+
+#submit-button-div {
+    display: flex;
+}
+
+#submit-button {
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid var(--yellow) 3px;
+    background: none;
+}
+
+#other-options-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other-options {
+    margin: 10px;
+}
+
+footer {
+    height: 20vh;
+    background-color: var(--teal);
+    box-shadow: 0px 5px 15px black inset;
+}
+
+/* psuedo selectors */
+
+.text-field:hover {
+    animation: text-box-animation;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+
+.navbutton:hover, #submit-button:hover {
+    animation: button-color-fill;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    cursor: pointer;
+}
+
+/* animations */
+
+@keyframes button-color-fill {
+    0% {
+
+    }
+
+    100% {
+        background-color: var(--yellow);
+    }
+}
+
+@keyframes text-box-animation {
+    0% {
+    }
+
+    100% {
+        padding: 15px;
+        margin: 5px;
+    }
+}
