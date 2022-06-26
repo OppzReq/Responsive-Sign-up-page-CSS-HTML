@@ -3,6 +3,7 @@
     margin: 0;
     font-family: ubuntu;
     color: white;
+
 }
 
 :root {
@@ -14,6 +15,15 @@
     --yellow: #FFC107;
 }
 
+
+html {
+    color: white;
+    background-color: rgb(47, 31, 31);
+}
+
+
+/* ----------header---------- */
+
 header {
     height: 50vh;
     color: white;
@@ -21,15 +31,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px -5px 15px black inset;
-}
-
-html {
-    color: white;
-    background-color: rgb(47, 31, 31);
-}
-
-body {
-    margin: auto 0px;
 }
 
 #navbar {
@@ -47,6 +48,8 @@ body {
     border-radius: 18px;
     margin: 20px 0;
 }
+
+/* ----------Body---------- */
 
 .center-text {
     text-align: center;
@@ -66,6 +69,7 @@ label {
     padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -73,6 +77,8 @@ label {
     display: flex;
     flex-direction: column;
     margin: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .dualTextField {
@@ -84,6 +90,9 @@ label {
 }
 
 .text-field {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     color: white;
     border: solid var(--yellow) 3px;
     background: none;
@@ -91,6 +100,7 @@ label {
     width: 35vw;
     padding: 10px;
     margin: 10px;
+    outline-color: solid var(--yellow) 2px;
 }
 
 .icon {
@@ -111,6 +121,7 @@ label {
     border: solid var(--yellow) 3px;
     border-radius: 10px;
     margin: 10px 0;
+    outline-color: white;
 }
 
 #bday-div {
@@ -144,10 +155,12 @@ label {
 }
 
 #submit-button-div {
-    display: flex;
+    display: block;
+    margin: auto 100vw;
 }
 
 #submit-button {
+    display: block;
     margin: 10px auto;
     padding: 10px;
     border-radius: 20px;
@@ -165,13 +178,22 @@ label {
     margin: 10px;
 }
 
-footer {
-    height: 20vh;
-    background-color: var(--teal);
-    box-shadow: 0px 5px 15px black inset;
+#other-signup-methods {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
 }
 
-/* psuedo selectors */
+#login {
+    text-decoration: none;
+    color: purple;
+}
+
+/* ----------footer---------- */
+
+
+
+/* ----------psuedo selectors---------- */
 
 .text-field:hover {
     animation: text-box-animation;
@@ -186,6 +208,18 @@ footer {
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
     cursor: pointer;
+}
+
+.fa-google:hover {
+    color: orange; 
+}
+
+.fa-facebook:hover {
+    color: #106DE7;
+}
+
+.fa-github:hover {
+    color: black;
 }
 
 /* animations */
